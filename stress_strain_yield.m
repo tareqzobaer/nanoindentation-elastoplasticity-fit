@@ -19,6 +19,10 @@ test_file_names = {'sp_sample1_1.xlsx','sp_sample1_2.xlsx','sp_sample2.xlsx'...
     'sp_sample3.xlsx','sp_sample5_1.xlsx','sp_sample5_2.xlsx','sp_sample6_1.xlsx','sp_sample7.xlsx'};
 
 
+if ~isfolder('ind_se_data')
+    mkdir('ind_se_data');
+end
+
 if isfile('ind_se_data\var_limits.mat')
     load('ind_se_data\var_limits.mat','var_limits')
 end
